@@ -1,0 +1,86 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.home__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: center;
+}
+
+.home__header a {
+  margin-right: 1rem;
+  text-decoration: inherit;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.8rem;
+}
+.home__header .AppsIcon {
+  margin-right: 1rem;
+}
+.home__header .Avatar {
+  width: 2rem;
+  height: 2rem;
+}
+.home__header a:hover {
+  text-decoration: underline;
+}
+.home__headerLeft {
+  visibility: hidden;
+}
+.home__headerRight {
+  display: flex;
+  align-items: center;
+  min-width: 13vw;
+  justify-content: space-between;
+}
+.home__body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 7%;
+}
+.home__body > img {
+  object-fit: contain;
+  width: 272px;
+}
+
+.home__footer {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+}
+
+.home__footerLine {
+  background: #f2f2f2;
+  padding: 0.8rem;
+  border-top: 1px solid rgb(212, 212, 212);
+  color: #5f6368;
+  display: flex;
+  justify-content: space-between;
+}
+
+.home__footer ul {
+  list-style: none;
+  display: flex;
+}
+
+.home__footer ul li,
+.home__footerLine .country {
+  margin: 0 0.9rem;
+}
+
+@media screen and (max-width: 700px) {
+  .home__footerLine .left {
+    display: none;
+  }
+  .home__footerLine:nth-child(2) {
+    justify-content: center;
+  }
+  .home__body > img {
+    object-fit: contain;
+    width: 160px;
+  }
+}
